@@ -7,6 +7,7 @@
 # az storage container create -n az storage container create -n tftstate-azure-terraform-er-gateway-eastus --account-name  cloudmdterraformstate
 #
 
+
 terraform {
   backend "azurerm" {
     resource_group_name     = "rg-terraform-state-001"
