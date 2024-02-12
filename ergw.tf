@@ -10,7 +10,7 @@ terraform {
   backend "azurerm" {
     resource_group_name     = "rg-terraform-state-001"
     storage_account_name    = "cloudmdterraformstate"
-    container_name          = "tftstate-azure-terraform-vpngw-connecitivity-hub-westus3"
+    container_name          = "tftstate-azure-terraform-er-gateway-eastUS"
     key                     = "tfstate"
   }
 }
