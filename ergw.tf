@@ -4,13 +4,14 @@
 # Create Storage Account Container
 # Suggestion: create tfstate-repo-name, needs to be lower case only
 #
-# az storage container create -n tftstate-azure-terraform-vpngw-connecitivity-hub-eastus --account-name  cloudmdterraformstate
+# az storage container create -n az storage container create -n tftstate-azure-terraform-er-gateway-eastus --account-name  cloudmdterraformstate
 #
+
 terraform {
   backend "azurerm" {
     resource_group_name     = "rg-terraform-state-001"
     storage_account_name    = "cloudmdterraformstate"
-    container_name          = "tftstate-azure-terraform-er-gateway-eastUS"
+    container_name          = "tftstate-azure-terraform-er-gateway-eastus"
     key                     = "tfstate"
   }
 }
