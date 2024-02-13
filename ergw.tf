@@ -45,4 +45,3 @@ resource azurerm_express_route_circuit "express_route" {
     }
 }
 
-
