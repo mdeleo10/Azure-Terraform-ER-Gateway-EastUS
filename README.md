@@ -27,9 +27,7 @@ Action Secrets:
 
 ### See     .github/workflows/terraform.yml file for Action execution
 
-### Note on deployment time: Creating a virtual network gateway can take up to **30 minutes** to complete.
-
-### Post VPN Gateway creation
+### Post Express Route circuit creation
 
 - Once the ExpressRoute circuit is successfully created, need to follow activation with the partner or provider. Provide the service key to them.
 
