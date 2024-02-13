@@ -38,6 +38,8 @@ Action Secrets:
 
 # References:
 - [Azure Express Route ](https://learn.microsoft.com/en-us/azure/expressroute/)
+- [Azure Express Route Circuit Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/express_route_circuit.html)
+- [Azure Express Route Circuit Connection Private Peering Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/express_route_circuit_connection)
 - [Azure Cloud Adoption Framework - Enterprise Scale Landing Zone Architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone)
 - [Terraform Registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/point_to_site_vpn_gateway)
 - [Virtual network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
