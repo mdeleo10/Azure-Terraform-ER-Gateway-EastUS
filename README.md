@@ -12,17 +12,7 @@ While this creates a single VNET, it can serve as a connectivity hub for the fol
 It has the following variables defined in the file variables.rf
 - Resource Group Name
 - Resource Region Location
-- Vnet Address Space
-- VPN GW Subnet Address Space
-- VPN GW Client P2S Subnet Address Space
-- Remote IPv4 address external peering
-- Remote IPv4 address space
-- Remote BGP ASN (default is a private ASN)
-- Remote IPv4 address bgp peering - internal address
-- IPSec Shared Key
 
-TBD:
-Guthub is setup for a workflow to to run Actions upon code change (push) and deploy/redploy as needed. 
 
 ## Prerequistes:
 
@@ -49,14 +39,13 @@ Action Secrets:
 
 ### Post VPN Gateway creation
 
-- Once the VPN gateway is successfully deployed, the remote IPSec router/firewall/gateway needs to be configured for the Site-to-Site termination. The major vendors (Cisco, Juuniper, Generic Samples, Sentrium, Ubiquiti, Allied Telesis, etc.) configurations can be dowloaded from the Resource Group/Connection then under the tab section use Download configuration. This should work to configure the remote network device.
+- Once the ExpressRoute circuit is successfully created, need to follow activation with the partner or provider. Provide the service key to them.
 
 ## For Point-to-Site use, see ..
 
-## The Site to Site configuration can work with a DMZ
-Ideally the local router should have a Public IP address, but on ocassions it is behind a NAT. See the Cisco_IOS_15.2_DMZ_config.txt example for a local router behind a NAT device. If a DMZ device can be configured to point to the router, it will work. The configuration change needs to update local external IP of the router's outside IP (inside the NAT network) and not the Public IP of the NAT device. It has been tested on a Cisco router with Xfinity cable modem performing NAT.
 
 # References:
+- [Azure Express Route ](https://learn.microsoft.com/en-us/azure/expressroute/)
 - [Azure Cloud Adoption Framework - Enterprise Scale Landing Zone Architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone)
 - [Terraform Registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/point_to_site_vpn_gateway)
 - [Virtual network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
