@@ -1,7 +1,7 @@
 # Azure-Terraform-VPNGW-Hub-EastUS
 
 This Azure Terraform template creates in Azure an Express Gateway circuit
-
+    
 
 It has the following variables defined in the file variables.rf
 - Resource Group Name
@@ -17,11 +17,9 @@ Action Secrets:
 - AZURE_SUBSCRIPTION_ID
 
 ### Note: The Service Principal needs to have the RBAC rights over the subscription to 
-- Create a Resource Group
+- Create a Resource Group if needed
 - Create A Vnet and subnet
-- Create Public IP address
-- Create NSG
-- Create a VPNGW and Local Network Gateway
+- Create a ERGW and connections
 
 ### Note 2: Also needed access to the existing Resource Group rg-terraform-state-001 for the following:
 - Storage Account and IAM access, for example contributor, for cloudmdterraformstate in RG rg-terraform-state-001.
